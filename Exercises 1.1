@@ -1,0 +1,39 @@
+      Exercise 1.1
+            1.     If we leave out one of the parentheses in a print statement, we'll get a syntax error indicating a missing closing parenthesis. If we leave out both parentheses, we'll get a syntax error 
+                   indicating an invalid syntax.
+            2.     If we leave out one of the quotation marks when trying to print a string, we'll get a syntax error indicating an invalid syntax. If we leave out both quotation marks, we'll get a NameError 
+                   indicating that the string is not defined (assuming there's no variable with that name).
+            3.     Putting a plus sign before a number doesn't change its value; it remains positive. For example, +2 is simply 2. However, in the expression 2++2, Python will interpret it as 2 + (+2), resulting 
+                  in 4. Essentially, it treats the second '+' as the unary plus operator.
+            4.     In Python, leading zeros are not allowed in integer literals. If we try to use leading zeros, Python will interpret the number as an octal (base 8) literal. So, 09 would result in a SyntaxError 
+                  because  9 is not a valid digit in base 8. Similarly, 011 would also result in a SyntaxError because 11 is not a valid octal number.
+            5.     If we have two values with no operator between them, Python will raise a SyntaxError indicating an invalid syntax. Python requires an operator between two values to form a valid expression.
+    Exercise 1.2
+            1.      To find out how many seconds are there in 42 minutes 42 seconds: 
+                     total_seconds = (42 * 60) + 42 
+                     print("Total seconds:", total_seconds)
+                     Output: 
+                     Total seconds: 2562
+            2.      To convert 10 kilometers to miles:
+                    kilometers = 10miles = kilometers / 1.61 
+                    print("Miles:", miles)
+                     Output:
+                     Miles: 6.211180124223602
+
+            3        To calculate the average pace and speed: 
+                     total_seconds = 42 * 60 + 42 
+                     total_hours = total_seconds / 3600
+                    miles = 10 / 1.61 
+            
+            average_pace_minutes = total_seconds / 60 / miles
+            average_pace_seconds = (average_pace_minutes - int(average_pace_minutes)) * 60
+           average_pace_minutes = int(average_pace_minutes)
+
+            average_speed_mph = miles / total_hours
+
+           print("Average pace:", average_pace_minutes, "minutes", round(average_pace_seconds), "seconds per mile")
+           print("Average speed:", round(average_speed_mph, 2), "miles per hour")
+           Output:
+           Average pace: 6 minutes 52 seconds per mile
+           Average speed: 8.73 miles per hour
+           So, if you run a 10 kilometer race in 42 minutes 42 seconds, your average pace is 6 minutes 52 seconds per mile, and your average speed is approximately 8.73 miles per hour.
